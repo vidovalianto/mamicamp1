@@ -18,6 +18,8 @@ class CityViewController: UIViewController{
         super.viewDidLoad()
         
         cityTV.dataSource = self
+        cityTV.delegate = self
+        
 
         // Do any additional setup after loading the view.
     }
