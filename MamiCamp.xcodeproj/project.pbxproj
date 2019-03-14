@@ -20,9 +20,11 @@
 		26D9C985222E89CC00DC243B /* MamiCamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C983222E89CC00DC243B /* MamiCamp.xcdatamodeld */; };
 		26D9C987222E89CC00DC243B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D9C986222E89CC00DC243B /* Assets.xcassets */; };
 		26D9C98A222E89CC00DC243B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D9C988222E89CC00DC243B /* LaunchScreen.storyboard */; };
+		81AB1901410DBD41FDE535C6 /* Pods_MamiCamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24527E80E40836F66790E304 /* Pods_MamiCamp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24527E80E40836F66790E304 /* Pods_MamiCamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamiCamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2652A4AE223279BA001DA036 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		2652A4B022327F03001DA036 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		2652A4B22232831D001DA036 /* CityViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CityViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		26D9C986222E89CC00DC243B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26D9C989222E89CC00DC243B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26D9C98B222E89CC00DC243B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41890F4403F61F3088ED9F03 /* Pods-MamiCamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamiCamp.release.xcconfig"; path = "Target Support Files/Pods-MamiCamp/Pods-MamiCamp.release.xcconfig"; sourceTree = "<group>"; };
+		8130589DE1895AC5920ECD00 /* Pods-MamiCamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamiCamp.debug.xcconfig"; path = "Target Support Files/Pods-MamiCamp/Pods-MamiCamp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +49,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AB1901410DBD41FDE535C6 /* Pods_MamiCamp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2345D0F35800EB2F0FB2B574 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8130589DE1895AC5920ECD00 /* Pods-MamiCamp.debug.xcconfig */,
+				41890F4403F61F3088ED9F03 /* Pods-MamiCamp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2679AA952237C7F100C813B0 /* CityView */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +92,8 @@
 			children = (
 				26D9C97B222E89CC00DC243B /* MamiCamp */,
 				26D9C97A222E89CC00DC243B /* Products */,
+				2345D0F35800EB2F0FB2B574 /* Pods */,
+				F5EDC7D9E7C729A6560A289B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +121,14 @@
 			path = MamiCamp;
 			sourceTree = "<group>";
 		};
+		F5EDC7D9E7C729A6560A289B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24527E80E40836F66790E304 /* Pods_MamiCamp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26D9C98E222E89CC00DC243B /* Build configuration list for PBXNativeTarget "MamiCamp" */;
 			buildPhases = (
+				7F15EA603BECC05D34CEE548 /* [CP] Check Pods Manifest.lock */,
 				26D9C975222E89CC00DC243B /* Sources */,
 				26D9C976222E89CC00DC243B /* Frameworks */,
 				26D9C977222E89CC00DC243B /* Resources */,
+				D06B3B068050B8163A63FD02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +198,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F15EA603BECC05D34CEE548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MamiCamp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D06B3B068050B8163A63FD02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MamiCamp/Pods-MamiCamp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MamiCamp/Pods-MamiCamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26D9C975222E89CC00DC243B /* Sources */ = {
@@ -320,6 +398,7 @@
 		};
 		26D9C98F222E89CC00DC243B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8130589DE1895AC5920ECD00 /* Pods-MamiCamp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +413,7 @@
 		};
 		26D9C990222E89CC00DC243B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41890F4403F61F3088ED9F03 /* Pods-MamiCamp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
