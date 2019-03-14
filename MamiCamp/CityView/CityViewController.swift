@@ -14,11 +14,15 @@ class CityViewController: UIViewController{
     
     @IBOutlet weak var cityTV: UITableView!
     
+    lazy var viewModel = CityViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         cityTV.dataSource = self
         cityTV.delegate = self
+        
+        viewModel.loadCities()
         
 
         // Do any additional setup after loading the view.

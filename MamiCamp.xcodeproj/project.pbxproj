@@ -20,6 +20,8 @@
 		26D9C985222E89CC00DC243B /* MamiCamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C983222E89CC00DC243B /* MamiCamp.xcdatamodeld */; };
 		26D9C987222E89CC00DC243B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D9C986222E89CC00DC243B /* Assets.xcassets */; };
 		26D9C98A222E89CC00DC243B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D9C988222E89CC00DC243B /* LaunchScreen.storyboard */; };
+		26EA6ADB223A637A00154BBF /* NetworkFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA6ADA223A637A00154BBF /* NetworkFacade.swift */; };
+		26EA6ADE223A667200154BBF /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA6ADD223A667200154BBF /* CityViewModel.swift */; };
 		81AB1901410DBD41FDE535C6 /* Pods_MamiCamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24527E80E40836F66790E304 /* Pods_MamiCamp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		26D9C986222E89CC00DC243B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26D9C989222E89CC00DC243B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26D9C98B222E89CC00DC243B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EA6ADA223A637A00154BBF /* NetworkFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFacade.swift; sourceTree = "<group>"; };
+		26EA6ADD223A667200154BBF /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		41890F4403F61F3088ED9F03 /* Pods-MamiCamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamiCamp.release.xcconfig"; path = "Target Support Files/Pods-MamiCamp/Pods-MamiCamp.release.xcconfig"; sourceTree = "<group>"; };
 		8130589DE1895AC5920ECD00 /* Pods-MamiCamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamiCamp.debug.xcconfig"; path = "Target Support Files/Pods-MamiCamp/Pods-MamiCamp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +66,6 @@
 				8130589DE1895AC5920ECD00 /* Pods-MamiCamp.debug.xcconfig */,
 				41890F4403F61F3088ED9F03 /* Pods-MamiCamp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,6 +113,8 @@
 			children = (
 				2679AA952237C7F100C813B0 /* CityView */,
 				2679AA982237CA5400C813B0 /* CampusView */,
+				26EA6AD9223A635800154BBF /* Networks */,
+				26EA6ADC223A665E00154BBF /* ViewModel */,
 				26D9C97C222E89CC00DC243B /* AppDelegate.swift */,
 				26D9C97E222E89CC00DC243B /* ViewController.swift */,
 				26D9C980222E89CC00DC243B /* Main.storyboard */,
@@ -119,6 +124,22 @@
 				26D9C983222E89CC00DC243B /* MamiCamp.xcdatamodeld */,
 			);
 			path = MamiCamp;
+			sourceTree = "<group>";
+		};
+		26EA6AD9223A635800154BBF /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				26EA6ADA223A637A00154BBF /* NetworkFacade.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		26EA6ADC223A665E00154BBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26EA6ADD223A667200154BBF /* CityViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F5EDC7D9E7C729A6560A289B /* Frameworks */ = {
@@ -256,9 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2652A4B32232831D001DA036 /* CityViewController+TableViewDataSource.swift in Sources */,
+				26EA6ADE223A667200154BBF /* CityViewModel.swift in Sources */,
 				26D9C97F222E89CC00DC243B /* ViewController.swift in Sources */,
 				26D9C97D222E89CC00DC243B /* AppDelegate.swift in Sources */,
 				2679AA9A2237D23C00C813B0 /* CampusCVC.swift in Sources */,
+				26EA6ADB223A637A00154BBF /* NetworkFacade.swift in Sources */,
 				2652A4B122327F03001DA036 /* CityTableViewCell.swift in Sources */,
 				26D9C985222E89CC00DC243B /* MamiCamp.xcdatamodeld in Sources */,
 				2679AA972237CA2C00C813B0 /* CampusViewController.swift in Sources */,
