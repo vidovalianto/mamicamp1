@@ -22,6 +22,8 @@ class CityViewController: UIViewController{
         cityTV.dataSource = self
         cityTV.delegate = self
         
+        viewModel.delegate = self
+        
         viewModel.loadCities()
         
 

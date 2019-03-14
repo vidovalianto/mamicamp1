@@ -8,15 +8,23 @@
 
 import Foundation
 
+protocol CityViewModelDelegate {
+    func onCitiesLoaded ()
+}
+
 class CityViewModel{
+    
+    var delegate : CityViewModelDelegate?
+    var cities = [CityModel]()
     
     func loadCities(){
         NetworkFacade.getApi(url: "https://mamikos.com/garuda/area") {
             (json) in
-            print(json)
+            for object in json["campus"].arrayValue{
+                let city = CityModel(object : object)
+                self.cities.append(city)
+            }
+            self.delegate?.onCitiesLoaded()
         }
     }
-    
-    
-    
 }

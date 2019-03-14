@@ -22,6 +22,9 @@
 		26D9C98A222E89CC00DC243B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D9C988222E89CC00DC243B /* LaunchScreen.storyboard */; };
 		26EA6ADB223A637A00154BBF /* NetworkFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA6ADA223A637A00154BBF /* NetworkFacade.swift */; };
 		26EA6ADE223A667200154BBF /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA6ADD223A667200154BBF /* CityViewModel.swift */; };
+		26EA6AE1223A781700154BBF /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA6AE0223A781700154BBF /* CityModel.swift */; };
+		26EA6AE3223A78D600154BBF /* AreaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA6AE2223A78D600154BBF /* AreaModel.swift */; };
+		26EA6AE5223A78EB00154BBF /* CoordinateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EA6AE4223A78EB00154BBF /* CoordinateModel.swift */; };
 		81AB1901410DBD41FDE535C6 /* Pods_MamiCamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24527E80E40836F66790E304 /* Pods_MamiCamp.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,9 @@
 		26D9C98B222E89CC00DC243B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EA6ADA223A637A00154BBF /* NetworkFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFacade.swift; sourceTree = "<group>"; };
 		26EA6ADD223A667200154BBF /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		26EA6AE0223A781700154BBF /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		26EA6AE2223A78D600154BBF /* AreaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaModel.swift; sourceTree = "<group>"; };
+		26EA6AE4223A78EB00154BBF /* CoordinateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateModel.swift; sourceTree = "<group>"; };
 		41890F4403F61F3088ED9F03 /* Pods-MamiCamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamiCamp.release.xcconfig"; path = "Target Support Files/Pods-MamiCamp/Pods-MamiCamp.release.xcconfig"; sourceTree = "<group>"; };
 		8130589DE1895AC5920ECD00 /* Pods-MamiCamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamiCamp.debug.xcconfig"; path = "Target Support Files/Pods-MamiCamp/Pods-MamiCamp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,7 @@
 		26D9C97B222E89CC00DC243B /* MamiCamp */ = {
 			isa = PBXGroup;
 			children = (
+				26EA6ADF223A77C000154BBF /* Model */,
 				2679AA952237C7F100C813B0 /* CityView */,
 				2679AA982237CA5400C813B0 /* CampusView */,
 				26EA6AD9223A635800154BBF /* Networks */,
@@ -140,6 +147,16 @@
 				26EA6ADD223A667200154BBF /* CityViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		26EA6ADF223A77C000154BBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26EA6AE0223A781700154BBF /* CityModel.swift */,
+				26EA6AE2223A78D600154BBF /* AreaModel.swift */,
+				26EA6AE4223A78EB00154BBF /* CoordinateModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F5EDC7D9E7C729A6560A289B /* Frameworks */ = {
@@ -276,14 +293,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EA6AE3223A78D600154BBF /* AreaModel.swift in Sources */,
 				2652A4B32232831D001DA036 /* CityViewController+TableViewDataSource.swift in Sources */,
 				26EA6ADE223A667200154BBF /* CityViewModel.swift in Sources */,
 				26D9C97F222E89CC00DC243B /* ViewController.swift in Sources */,
 				26D9C97D222E89CC00DC243B /* AppDelegate.swift in Sources */,
+				26EA6AE5223A78EB00154BBF /* CoordinateModel.swift in Sources */,
 				2679AA9A2237D23C00C813B0 /* CampusCVC.swift in Sources */,
 				26EA6ADB223A637A00154BBF /* NetworkFacade.swift in Sources */,
 				2652A4B122327F03001DA036 /* CityTableViewCell.swift in Sources */,
 				26D9C985222E89CC00DC243B /* MamiCamp.xcdatamodeld in Sources */,
+				26EA6AE1223A781700154BBF /* CityModel.swift in Sources */,
 				2679AA972237CA2C00C813B0 /* CampusViewController.swift in Sources */,
 				2679AA922237BF9E00C813B0 /* CityViewController+TableViewDelegate.swift in Sources */,
 				2652A4AF223279BA001DA036 /* CityViewController.swift in Sources */,
