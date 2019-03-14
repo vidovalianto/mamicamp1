@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func testBtnClicked(_ sender: Any) {
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "CityViewController") as? CityViewController{
-            self.present(controller, animated: true, completion: nil)
+            self.show(controller, sender: self)
         }else {
             print("error")
         }

@@ -9,8 +9,7 @@
 import UIKit
 
 class CityViewController: UIViewController{
-    
-    let cities = ["Yogya","Bandung","Jakarta","Surabaya","Solo"]
+
     
     @IBOutlet weak var cityTV: UITableView!
     

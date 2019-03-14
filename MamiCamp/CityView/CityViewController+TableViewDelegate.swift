@@ -12,20 +12,18 @@ import UIKit
 extension CityViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("select \(cities [indexPath.row])")
         let cell = tableView.cellForRow(at: indexPath) as! CityTableViewCell
         cell.cityLbl.textColor = UIColor.blue
         
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "CampusViewController") as? CampusViewController{
-            controller.titlePage = cities [indexPath.row]
-            self.present(controller, animated: true, completion: nil)
+            controller.titlePage = self.viewModel.cities[indexPath.row].city
+            self.show(controller, sender: self)
         }else {
             print("error")
         }
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        print("deselect \(cities [indexPath.row])")
         let cell = tableView.cellForRow(at: indexPath) as! CityTableViewCell
         cell.cityLbl.textColor = UIColor.red
     }
