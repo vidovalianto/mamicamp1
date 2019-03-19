@@ -15,6 +15,7 @@
 		2679AA972237CA2C00C813B0 /* CampusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2679AA962237CA2C00C813B0 /* CampusViewController.swift */; };
 		2679AA9A2237D23C00C813B0 /* CampusCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2679AA992237D23C00C813B0 /* CampusCVC.swift */; };
 		26A9A39622407BC400D9350A /* NewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26A9A39522407BC400D9350A /* NewView.xib */; };
+		26C52CC92240FDBE007155B3 /* AnyViewExtender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C52CC82240FDBE007155B3 /* AnyViewExtender.swift */; };
 		26D9C97D222E89CC00DC243B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C97C222E89CC00DC243B /* AppDelegate.swift */; };
 		26D9C97F222E89CC00DC243B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C97E222E89CC00DC243B /* ViewController.swift */; };
 		26D9C982222E89CC00DC243B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D9C980222E89CC00DC243B /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		2679AA962237CA2C00C813B0 /* CampusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewController.swift; sourceTree = "<group>"; };
 		2679AA992237D23C00C813B0 /* CampusCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusCVC.swift; sourceTree = "<group>"; };
 		26A9A39522407BC400D9350A /* NewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewView.xib; sourceTree = "<group>"; };
+		26C52CC82240FDBE007155B3 /* AnyViewExtender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewExtender.swift; sourceTree = "<group>"; };
 		26D9C979222E89CC00DC243B /* MamiCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamiCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D9C97C222E89CC00DC243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D9C97E222E89CC00DC243B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				26D9C988222E89CC00DC243B /* LaunchScreen.storyboard */,
 				26D9C98B222E89CC00DC243B /* Info.plist */,
 				26D9C983222E89CC00DC243B /* MamiCamp.xcdatamodeld */,
+				26C52CC82240FDBE007155B3 /* AnyViewExtender.swift */,
 			);
 			path = MamiCamp;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-MamiCamp/Pods-MamiCamp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-SwiftyJSON/Alamofire_SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -283,6 +287,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +307,7 @@
 				26EA6ADE223A667200154BBF /* CityViewModel.swift in Sources */,
 				26D9C97F222E89CC00DC243B /* ViewController.swift in Sources */,
 				26D9C97D222E89CC00DC243B /* AppDelegate.swift in Sources */,
+				26C52CC92240FDBE007155B3 /* AnyViewExtender.swift in Sources */,
 				26EA6AE5223A78EB00154BBF /* CoordinateModel.swift in Sources */,
 				2679AA9A2237D23C00C813B0 /* CampusCVC.swift in Sources */,
 				26EA6ADB223A637A00154BBF /* NetworkFacade.swift in Sources */,

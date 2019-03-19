@@ -32,6 +32,10 @@ class CityModel {
             self.area.append(area)
         }
     }
+    
+    func getRealImageURL () -> String{
+        return baseURL + imageUrl
+    }
 }
 
 

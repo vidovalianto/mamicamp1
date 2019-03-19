@@ -17,6 +17,7 @@ extension CityViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CityTableViewCell", for: indexPath) as!  CityTableViewCell
         cell.cityLbl.text = self.viewModel.cities[indexPath.row].city
+        cell.cityImageView.loadImageURL(url: self.viewModel.cities[indexPath.row].getRealImageURL())
         return cell
     }
     

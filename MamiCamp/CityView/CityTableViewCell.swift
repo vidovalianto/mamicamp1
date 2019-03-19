@@ -12,6 +12,7 @@ class CityTableViewCell: UITableViewCell {
     let cities = ["Yogya","Bandung","Jakarta","Surabaya","Solo"]
 
     @IBOutlet weak var cityLbl: UILabel!
+    @IBOutlet weak var cityImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

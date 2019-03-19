@@ -9,6 +9,7 @@
 import Alamofire_SwiftyJSON
 import Alamofire
 import SwiftyJSON
+import AlamofireImage
 
 class NetworkFacade{
     static func getApi(url : String, parameters: [String: String] = [:], callback: @escaping (JSON)-> ()) {
@@ -21,4 +22,6 @@ class NetworkFacade{
 
         }
     }
+    
+    
 }
