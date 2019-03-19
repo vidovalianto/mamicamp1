@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var testBtn: UIButton!
     
     @IBOutlet weak var testLbl: UILabel!
+    @IBOutlet weak var registerBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,14 @@ class ViewController: UIViewController {
         }
     }
     
-
+    @IBAction func registerBtnClicked(_ sender: Any) {
+        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as? RegisterVC
+        {
+            self.show(controller, sender: self)
+        }else {
+            print("error")
+        }
+    }
+    
 }
 

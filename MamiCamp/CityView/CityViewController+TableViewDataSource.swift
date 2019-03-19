@@ -20,7 +20,6 @@ extension CityViewController:UITableViewDataSource{
         cell.cityImageView.loadImageURL(url: self.viewModel.cities[indexPath.row].getRealImageURL())
         return cell
     }
-    
 }
 
 extension CityViewController : CityViewModelDelegate{

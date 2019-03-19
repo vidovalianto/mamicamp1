@@ -42,13 +42,22 @@
                                             <action selector="testBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGi-pr-5vG"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-PB-UEN">
+                                        <rect key="frame" x="159" y="211" width="57" height="30"/>
+                                        <state key="normal" title="Register"/>
+                                        <connections>
+                                            <action selector="registerBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDV-6C-b9q"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="VFG-ee-3x4" secondAttribute="trailing" constant="10" id="8ZA-vh-Ord"/>
+                                    <constraint firstItem="RWv-PB-UEN" firstAttribute="top" secondItem="dI6-dO-L1d" secondAttribute="bottom" constant="40" id="8gY-LA-ANj"/>
                                     <constraint firstItem="dI6-dO-L1d" firstAttribute="centerX" secondItem="gzB-dG-l0w" secondAttribute="centerX" id="aM5-G2-VTd"/>
                                     <constraint firstItem="VFG-ee-3x4" firstAttribute="top" secondItem="gzB-dG-l0w" secondAttribute="top" constant="10" id="biZ-21-bNj"/>
                                     <constraint firstItem="VFG-ee-3x4" firstAttribute="leading" secondItem="gzB-dG-l0w" secondAttribute="leading" constant="10" id="eIO-uH-Ovd"/>
+                                    <constraint firstItem="RWv-PB-UEN" firstAttribute="centerX" secondItem="gzB-dG-l0w" secondAttribute="centerX" id="eXF-OI-eu8"/>
                                     <constraint firstItem="VFG-ee-3x4" firstAttribute="centerX" secondItem="gzB-dG-l0w" secondAttribute="centerX" id="lIq-Hc-odi"/>
                                     <constraint firstItem="dI6-dO-L1d" firstAttribute="bottom" secondItem="VFG-ee-3x4" secondAttribute="bottom" constant="100" id="p2N-Lk-XFe"/>
                                 </constraints>
@@ -65,6 +74,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cLL-1n-Pku"/>
                     <connections>
+                        <outlet property="registerBtn" destination="RWv-PB-UEN" id="XIc-d2-6OF"/>
                         <outlet property="testBtn" destination="dI6-dO-L1d" id="nUG-h9-mH5"/>
                         <outlet property="testLbl" destination="VFG-ee-3x4" id="GuI-gd-NsX"/>
                     </connections>
@@ -73,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="870" y="117"/>
         </scene>
-        <!--View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="MJ0-K6-J7K">
             <objects>
-                <viewController id="pJW-Km-uDx" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RegisterViewController" storyboardIdentifier="RegisterViewController" id="pJW-Km-uDx" customClass="RegisterVC" customModule="MamiCamp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SX9-8d-70d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,6 +141,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doneBtnClicked:" destination="pJW-Km-uDx" eventType="touchUpInside" id="mJd-OP-fDo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,6 +168,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tbf-B0-qfv"/>
                     </view>
+                    <connections>
+                        <outlet property="doneBtn" destination="7Nz-RY-RwE" id="UU5-kL-3Ru"/>
+                        <outlet property="emailET" destination="ac6-bP-ZVs" id="xlQ-Zj-Wzw"/>
+                        <outlet property="firstNameET" destination="Reh-Fs-W2S" id="sUD-6v-8DW"/>
+                        <outlet property="lastNameET" destination="1Kp-uQ-2pZ" id="vdc-Jf-ku6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="30C-cT-d4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
