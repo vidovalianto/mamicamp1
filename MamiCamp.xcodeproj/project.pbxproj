@@ -14,6 +14,7 @@
 		2679AA942237C7E800C813B0 /* CampusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2679AA932237C7E800C813B0 /* CampusCollectionViewCell.xib */; };
 		2679AA972237CA2C00C813B0 /* CampusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2679AA962237CA2C00C813B0 /* CampusViewController.swift */; };
 		2679AA9A2237D23C00C813B0 /* CampusCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2679AA992237D23C00C813B0 /* CampusCVC.swift */; };
+		26A9A39622407BC400D9350A /* NewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26A9A39522407BC400D9350A /* NewView.xib */; };
 		26D9C97D222E89CC00DC243B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C97C222E89CC00DC243B /* AppDelegate.swift */; };
 		26D9C97F222E89CC00DC243B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D9C97E222E89CC00DC243B /* ViewController.swift */; };
 		26D9C982222E89CC00DC243B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26D9C980222E89CC00DC243B /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		2679AA932237C7E800C813B0 /* CampusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CampusCollectionViewCell.xib; sourceTree = "<group>"; };
 		2679AA962237CA2C00C813B0 /* CampusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewController.swift; sourceTree = "<group>"; };
 		2679AA992237D23C00C813B0 /* CampusCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusCVC.swift; sourceTree = "<group>"; };
+		26A9A39522407BC400D9350A /* NewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewView.xib; sourceTree = "<group>"; };
 		26D9C979222E89CC00DC243B /* MamiCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamiCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D9C97C222E89CC00DC243B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26D9C97E222E89CC00DC243B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				26EA6AD9223A635800154BBF /* Networks */,
 				26EA6ADC223A665E00154BBF /* ViewModel */,
 				26D9C97C222E89CC00DC243B /* AppDelegate.swift */,
+				26A9A39522407BC400D9350A /* NewView.xib */,
 				26D9C97E222E89CC00DC243B /* ViewController.swift */,
 				26D9C980222E89CC00DC243B /* Main.storyboard */,
 				26D9C986222E89CC00DC243B /* Assets.xcassets */,
@@ -230,6 +233,7 @@
 			files = (
 				26D9C98A222E89CC00DC243B /* LaunchScreen.storyboard in Resources */,
 				2679AA942237C7E800C813B0 /* CampusCollectionViewCell.xib in Resources */,
+				26A9A39622407BC400D9350A /* NewView.xib in Resources */,
 				26D9C987222E89CC00DC243B /* Assets.xcassets in Resources */,
 				26D9C982222E89CC00DC243B /* Main.storyboard in Resources */,
 			);
