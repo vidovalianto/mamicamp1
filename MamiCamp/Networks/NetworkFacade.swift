@@ -28,7 +28,7 @@ class NetworkFacade{
     
     static func postApi(url : String, parameters: [String: Any] = [:], callback: @escaping (JSON)-> ()) {
         let header : HTTPHeaders = ["Content-Type": "application/json"]
-        Alamofire.request(url, method: .post, parameters: parameters, encoding:  URLEncoding.default, headers : header)
+        Alamofire.request(url, method: .post, parameters: parameters, encoding:  JSONEncoding.default, headers : header)
             .responseSwiftyJSON { dataResponse in
                 guard let value = dataResponse.result.value else {
                     return

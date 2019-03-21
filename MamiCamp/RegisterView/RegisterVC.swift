@@ -25,20 +25,12 @@ class RegisterVC: UIViewController {
     @IBAction func doneBtnClicked(_ sender: Any) {
         if(isValidate()){
             var postParams: [String:Any] = [
-                "user_id" : 1801,
-                "email" : true,
-                "first_name" : firstNameET.text,
-                "last_name" : lastNameET.text
+                "age" : emailET.text,
+                "name" : firstNameET.text,
+                "salary" : lastNameET.text
             ]
-            var jsonString : String
-            do {
-                let jsonData = try JSONSerialization.data(withJSONObject: postParams, options: .prettyPrinted)
-                let jsonString = String(data: jsonData, encoding: String.Encoding.ascii)
-            } catch {
-                print("error")
-            }
             
-            NetworkFacade.postApi(url: "http://wonderdance-user.duckdns.org:8082/user", parameters: jsonString) { (json) in
+            NetworkFacade.postApi(url: "http://dummy.restapiexample.com/api/v1/create", parameters: postParams) { (json) in
                 print(json)
             }
         }
@@ -61,8 +53,8 @@ class RegisterVC: UIViewController {
         }
         if (emailET.text?.isEmpty == true){
             print("nama email diisi")
-        }else if (emailET.text!.count < 3){
-            print("email minimal 3 huruf")
+        }else if (emailET.text!.count < 1){
+            print("email minimal 1 huruf")
         }else {
             isValid = true
         }
