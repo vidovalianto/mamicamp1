@@ -33,6 +33,30 @@ class CityModel {
         }
     }
     
+    required init(entity:CityEntity){
+        self.city = entity.city
+        self.imageUrl = entity.imageUrl
+        
+        if let area_of_city = entity.area_of_city{
+            for area in area_of_city{
+                let areaModel = AreaModel(entity: area as! AreaEntity)
+                self.area.append(areaModel)
+            }
+        }
+    }
+    
+    func toCityEntity()-> CityEntity{
+        let cityEntity = CityEntity()
+        cityEntity.imageUrl = self.imageUrl
+        cityEntity.city = self.city
+        
+        for area in self.area {
+            cityEntity.addToArea_of_city(area.toAreaEntity())
+        }
+        
+        return cityEntity
+    }
+    
     func getRealImageURL () -> String{
         return baseURL + imageUrl
     }

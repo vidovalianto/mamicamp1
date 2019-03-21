@@ -13,8 +13,6 @@ import AlamofireImage
 
 class NetworkFacade{
     
-    
-    
     static func getApi(url : String, parameters: [String: String] = [:], callback: @escaping (JSON)-> ()) {
         Alamofire.request(url, method: .get, parameters: parameters, encoding:  URLEncoding.default)
             .responseSwiftyJSON { dataResponse in

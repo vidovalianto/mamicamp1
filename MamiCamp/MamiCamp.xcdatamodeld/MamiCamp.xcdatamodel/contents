@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AreaEntity" representedClassName="AreaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="city_of_area" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CityEntity" inverseName="area_of_city" inverseEntity="CityEntity" syncable="YES"/>
+        <relationship name="coordinate_of_area" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CoordinateEntity" inverseName="area_of_coordinate" inverseEntity="CoordinateEntity" syncable="YES"/>
+    </entity>
+    <entity name="CityEntity" representedClassName="CityEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="area_of_city" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AreaEntity" inverseName="city_of_area" inverseEntity="AreaEntity" syncable="YES"/>
+    </entity>
+    <entity name="CoordinateEntity" representedClassName="CoordinateEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="area_of_coordinate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AreaEntity" inverseName="coordinate_of_area" inverseEntity="AreaEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CityEntity" positionX="-298.3125" positionY="-38.58203125" width="128" height="88"/>
+        <element name="AreaEntity" positionX="-79.0234375" positionY="-32.13671875" width="128" height="88"/>
+        <element name="CoordinateEntity" positionX="142.74609375" positionY="-31.328125" width="128" height="88"/>
+    </elements>
 </model>

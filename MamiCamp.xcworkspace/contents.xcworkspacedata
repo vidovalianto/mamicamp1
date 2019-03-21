@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CityEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:CityEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:CoordinateEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:CoordinateEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:AreaEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:AreaEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:MamiCamp.xcodeproj">
    </FileRef>
    <FileRef

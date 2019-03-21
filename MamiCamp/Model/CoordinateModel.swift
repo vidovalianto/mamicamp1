@@ -18,6 +18,18 @@ class CoordinateModel{
         
     }
     
+    required init(entity: CoordinateEntity){
+        self.latitude = entity.latitude
+        self.longitude = entity.longitude
+    }
+    
+    func toCoordinatentity()->CoordinateEntity{
+        let coordinateEntity = CoordinateEntity()
+        coordinateEntity.latitude = self.latitude
+        coordinateEntity.longitude = self.longitude
+        return coordinateEntity
+    }
+    
     required init(object: JSON){
                 self.latitude = object[0].doubleValue
                 self.longitude = object[1].doubleValue
