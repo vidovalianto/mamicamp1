@@ -23,6 +23,7 @@ class CityViewModel{
             for object in json["campus"].arrayValue{
                 let city = CityModel(object : object)
                 self.cities.append(city)
+                CoreDataManager.shared.addCity(cityEntity: city.toCityEntity())
             }
             self.delegate?.onCitiesLoaded()
         }

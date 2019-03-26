@@ -61,6 +61,12 @@ class CoreDataManager{
         }
     }
     
+    func fetchNewEntity(_ entityName : String) -> NSManagedObject{
+        let context = persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: entityName, in: context)
+        return NSManagedObject(entity: entity!, insertInto: context)
+    }
+    
     
     func addCity(cityEntity : CityEntity){
         self.cities.append(cityEntity)

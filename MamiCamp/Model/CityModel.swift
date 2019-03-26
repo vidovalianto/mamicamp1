@@ -46,7 +46,7 @@ class CityModel {
     }
     
     func toCityEntity()-> CityEntity{
-        let cityEntity = CityEntity()
+        let cityEntity = CoreDataManager.shared.fetchNewEntity("CityEntity") as! CityEntity
         cityEntity.imageUrl = self.imageUrl
         cityEntity.city = self.city
         
